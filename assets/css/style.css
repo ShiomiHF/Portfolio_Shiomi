@@ -3,6 +3,7 @@
 # General
 --------------------------------------------------------------*/
 body {
+    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
     font-family: "Quicksand", sans-serif;
     color: #272829;
 }
@@ -36,7 +37,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #ffd4ce;
+    background: #fff;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -45,7 +46,7 @@ h6 {
 
 .back-to-top i {
     font-size: 28px;
-    color: #fff;
+    color: #ffd4ce;
     line-height: 0;
 }
 
@@ -273,7 +274,6 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-    height: 100vh;
     background-color: #ffd4ce;
 }
 
@@ -288,7 +288,7 @@ h6 {
 .wave {
     position: absolute;
     width: 1500px;
-    height: 1300px;
+    height: 100vh;
     margin-left: -150px;
     margin-top: -250px;
     border-radius: 43%;
@@ -332,36 +332,46 @@ h6 {
     right: 0;
 }
 
+#hero h1,
+.hero-p,
+h2 {
+    color: #fdebe8;
+    text-shadow: 0 8px 9px #c4b59d, 0px -2px 1px #fff;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
 #hero h1 {
     margin: 0;
     font-size: 120px;
     font-weight: 700;
     line-height: 100px;
-    color: #fff;
+    text-transform: uppercase;
 }
 
 #hero p {
-    color: #fff;
     margin: 15px 0 0 0;
-    font-size: 80px;
+    font-size: 70px;
     font-family: "Poppins", sans-serif;
 }
 
 #hero .social-links {
+    z-index: 9999;
     margin-top: 30px;
 }
 
 #hero .social-links a {
-    font-size: 30px;
+    text-shadow: 2px 4px 5px #aca08c, 1.5px -1.5px 1px #fff;
+    font-size: 40px;
     display: inline-block;
-    color: #ffffff;
+    color: #fdebe8;
     line-height: 1;
     margin-right: 20px;
     transition: 0.3s;
 }
 
 #hero .social-links a:hover {
-    color: #ffaef1;
+    color: #e9a69d;
 }
 
 @media (max-width: 992px) {
@@ -391,28 +401,34 @@ section {
 
 .section-title {
     text-align: center;
-    padding-bottom: 10px;
+    padding-bottom: 30px;
 }
 
 .section-title h2 {
-    font-size: 80px;
+    font-size: 100px;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 10px;
     padding-bottom: 10px;
     position: relative;
-    color: #45505b;
+    color: #f1ebe5;
 }
 
 .section-title p {
     margin-bottom: 0;
 }
 
+#hero,
+#about,
+#portfolio {
+    min-height: 100vh;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 #about {
-    height: 100vh;
+    background-size: 100%;
 }
 
 .about .content h3 {
@@ -481,6 +497,10 @@ section {
     transition: ease-in-out 0.3s;
 }
 
+.illustration {
+    max-width: 20rem;
+}
+
 .about .icon-box p {
     line-height: 24px;
     font-size: 18px;
@@ -491,7 +511,6 @@ section {
 # Works
 --------------------------------------------------------------*/
 #portfolio {
-    height: 100vh;
     position: relative;
     padding-bottom: 50px;
 }
@@ -652,13 +671,12 @@ section {
 # Contact
 --------------------------------------------------------------*/
 #contact {
-    
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .contact .info {
     width: 100%;
-    background: #fff;
+    background: #e9dfd1;
 }
 
 .contact .info i {
@@ -667,7 +685,7 @@ section {
     float: left;
     width: 44px;
     height: 44px;
-    background: #eef7ff;
+    background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -676,7 +694,7 @@ section {
 }
 
 .contact .info h4 {
-    padding: 0 0 0 60px;
+    padding: 5px 0 0 60px;
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
@@ -706,7 +724,7 @@ section {
 
 .contact .php-email-form {
     width: 100%;
-    background: #fff;
+    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
 }
 
 .contact .php-email-form .form-group {
@@ -807,12 +825,13 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
+    min-height: 20vh;
     background: #ffd4ce;
     color: #fff;
     font-size: 14px;
     text-align: center;
     padding: 30px 0;
-    height: 20vh;
+    min-height: 20vh;
 }
 
 #footer h3 {
