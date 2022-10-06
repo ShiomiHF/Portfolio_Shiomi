@@ -152,137 +152,320 @@
             <!-- End About Section -->
 
             <!-- ======= Portfolio Section ======= -->
-            <section id="portfolio" class="paddsection">
-                <div class="container" data-aos="fade-up">
-                    <div class="section-title text-center">
-                        <h2>My Portfolio</h2>
+            <section id="portfolio" class="about d-flex flex-column justify-content-center">
+                <div class="container">
+                    <div class="text-center">
+                        <div class=" section-title">
+                            <h2 class="h2-portfolio">Portfolio</h2>
+                        </div>
+                        <h3 class="">Voilaaaa</h3>
                     </div>
-                </div>
-
-                <div class="container" data-aos="fade-up">
                     <div class="row">
-                        <div class="col-lg-12 d-flex justify-content-center">
-                            <ul id="portfolio-flters">
-                                <li data-filter="*" class="filter-active">All</li>
-                                <li data-filter=".filter-app">Graphique</li>
-                                <li data-filter=".filter-card">UI/UX</li>
-                                <li data-filter=".filter-web">Web</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="row portfolio-container">
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <img src="assets\img\portfolio\logo_pafundi.jpg" class="img-fluid" alt="" />
-                            <div class="portfolio-info">
-                                <h4>Création logo</h4>
-                                <p>projet Laetitia Pafundi</p>
-                                <a
-                                    href="assets/img/portfolio/portfolio-1.jpg"
-                                    data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link"
-                                    title="App 1"
-                                    ><i class="bx bx-plus"></i
-                                ></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"
-                                    ><i class="bx bx-linkne"></i
-                                ></a>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 1-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets\img\portfolio\affiche-film.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Afiche de film</div>
+                                    <div class="portfolio-caption-subheading text-muted">Photomontage</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <img src="assets\img\portfolio\newsletter.jpg" class="img-fluid" alt="" />
-                            <div class="portfolio-info">
-                                <h4>Intégration newsletter</h4>
-                                <p>Projet Pnier Gourmand</p>
-                                <a
-                                    href="assets/img/portfolio/portfolio-2.jpg"
-                                    data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link"
-                                    title="Web 3"
-                                    ><i class="bx bx-plus"></i
-                                ></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"
-                                    ><i class="bx bx-link"></i
-                                ></a>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 2-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets\img\portfolio\newsletter.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Newsletter Panier Gourmand</div>
+                                    <div class="portfolio-caption-subheading text-muted">Design & Intégration</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                            <img src="assets\img\portfolio\affiche-film.jpg" class="img-fluid" alt="" />
-                            <div class="portfolio-info">
-                                <h4>Affiche de film</h4>
-                                <p>Projet fictif</p>
-                                <a
-                                    href="assets/img/portfolio/portfolio-3.jpg"
-                                    data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link"
-                                    title="App 2"
-                                    ><i class="bx bx-plus"></i
-                                ></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"
-                                    ><i class="bx bx-link"></i
-                                ></a>
+                        <div class="col-lg-4 col-sm-6 mb-4">
+                            <!-- Portfolio item 3-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets\img\portfolio\logo_pafundi.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Logo Laetitia Pafundi</div>
+                                    <div class="portfolio-caption-subheading text-muted">Création logo & Charte grafoque</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <img src="assets\img\portfolio\slider-fatboy.jpg" class="img-fluid" alt="" />
-                            <div class="portfolio-info">
-                                <h4>Slider Fat boy</h4>
-                                <p>Projet fictif</p>
-                                <a
-                                    href="assets/img/portfolio/portfolio-4.jpg"
-                                    data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link"
-                                    title="Card 2"
-                                    ><i class="bx bx-plus"></i
-                                ></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"
-                                    ><i class="bx bx-link"></i
-                                ></a>
+                        <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                            <!-- Portfolio item 4-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets\img\portfolio\slider-fatboy.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Sliders</div>
+                                    <div class="portfolio-caption-subheading text-muted">Design & Mock-up</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                            <img src="assets\img\portfolio\apropos-cdui.jpg" class="img-fluid" alt="" />
-                            <div class="portfolio-info">
-                                <h4>Page à propos</h4>
-                                <p>Projet site CDUI lyon</p>
-                                <a
-                                    href="assets/img/portfolio/portfolio-5.jpg"
-                                    data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link"
-                                    title="Web 2"
-                                    ><i class="bx bx-plus"></i
-                                ></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"
-                                    ><i class="bx bx-link"></i
-                                ></a>
+                        <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                            <!-- Portfolio item 5-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets\img\portfolio\apropos-cdui.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Page trombinoscope</div>
+                                    <div class="portfolio-caption-subheading text-muted">Design & Intégration web</div>
+                                </div>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                            <img src="assets\img\portfolio\mockup-billetreduc.jpg" class="img-fluid" alt="" />
-                            <div class="portfolio-info">
-                                <h4>Refonte le site BilletRéduc</h4>
-                                <p>Projet fictif</p>
-                                <a
-                                    href="assets/img/portfolio/portfolio-6.jpg"
-                                    data-gallery="portfolioGallery"
-                                    class="portfolio-lightbox preview-link"
-                                    title="App 3"
-                                    ><i class="bx bx-plus"></i
-                                ></a>
-                                <a href="portfolio-details.html" class="details-link" title="More Details"
-                                    ><i class="bx bx-link"></i
-                                ></a>
+                        <div class="col-lg-4 col-sm-6">
+                            <!-- Portfolio item 6-->
+                            <div class="portfolio-item">
+                                <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                                    <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                    </div>
+                                    <img class="img-fluid" src="assets\img\portfolio\mockup-billetreduc.jpg" alt="..." />
+                                </a>
+                                <div class="portfolio-caption">
+                                    <div class="portfolio-caption-heading">Refonte le site</div>
+                                    <div class="portfolio-caption-subheading text-muted">Design & Mock-up</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
             <!-- End Portfolio Section -->
+            <!-- Portfolio Modals-->
+        <!-- Portfolio item 1 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/1.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Threads
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Illustration
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 2 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/2.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Explore
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Graphic Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 3 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/3.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Finish
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Identity
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 4 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/4.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Lines
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Branding
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 5 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/5.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Southwest
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Website Design
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio item 6 modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    <!-- Project details-->
+                                    <h2 class="text-uppercase">Project Name</h2>
+                                    <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/6.jpg" alt="..." />
+                                    <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                    <ul class="list-inline">
+                                        <li>
+                                            <strong>Client:</strong>
+                                            Window
+                                        </li>
+                                        <li>
+                                            <strong>Category:</strong>
+                                            Photography
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
             <!-- ======= Contact Section ======= -->
             <section id="contact" class="contact d-flex flex-column justify-content-center">
                 <div class="container" data-aos="fade-up">
@@ -423,13 +606,12 @@
                         <div>
                             <div id="button" class="HoverButton">
                                 <div class="bg"></div>
-                                <h1>Hover Me</h1>
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
             <div class="stamp">
                 <div class="circle">
                     <p id="circle-content"></p>
