@@ -27,6 +27,12 @@ h6 {
     font-family: "Raleway", sans-serif;
 }
 
+.btn-primary{
+    border-radius: 30px;
+    background-color: #ff8679 !important;
+    border-color: #ff8679 !important;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -554,11 +560,12 @@ section {
     margin: 0 auto;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    border-radius: 10px;
     display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
-    background: rgba(255, 200, 0, 0.9);
+    background: #ffd4ce;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -569,14 +576,14 @@ section {
     color: white;
 }
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover {
-    opacity: 1;
+    opacity: 0.7;
 }
 #portfolio .portfolio-item .portfolio-caption {
     padding: 1.5rem;
     text-align: center;
 }
 #portfolio .portfolio-item .portfolio-caption .portfolio-caption-heading {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
@@ -589,10 +596,13 @@ section {
 }
 
 .portfolio-modal .modal-dialog {
-    margin: 3rem;
+    
+    margin: 10em;
     max-width: 100vw;
 }
 .portfolio-modal .modal-content {
+    border-radius: 30px;
+    border-color: #fff;
     padding-top: 5rem;
     padding-bottom: 2rem;
     text-align: center;
@@ -609,6 +619,10 @@ section {
 .portfolio-modal .modal-content .h2 {
     font-size: 1.5rem;
     line-height: 2rem;
+}
+.portfolio-modal .modal-dialog {
+    margin: 2rem;
+    max-width: 100vw;
 }
 }
 .portfolio-modal .modal-content p.item-intro {
@@ -946,7 +960,6 @@ section {
 
 .contact .info {
     width: 100%;
-    background: #e9dfd1;
 }
 
 .contact .info i {
@@ -994,7 +1007,6 @@ section {
 
 .contact .php-email-form {
     width: 100%;
-    background: linear-gradient(to bottom, #ece4d9 0%, #e9dfd1 100%);
 }
 
 .contact .php-email-form .form-group {
@@ -1017,7 +1029,7 @@ section {
 .contact .php-email-form .sent-message {
     display: none;
     color: #fff;
-    background: #18d26e;
+    background: #ff8679;
     text-align: center;
     padding: 15px;
     font-weight: 600;
@@ -1037,7 +1049,7 @@ section {
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
+    border: 3px solid #ff8679;
     border-top-color: #eee;
     -webkit-animation: animate-loading 1s linear infinite;
     animation: animate-loading 1s linear infinite;
@@ -1045,7 +1057,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
-    border-radius: 4px;
+    border-radius: 25px;
     box-shadow: none;
     font-size: 14px;
 }
@@ -1068,7 +1080,7 @@ section {
 }
 
 .contact .php-email-form button[type="submit"]:hover {
-    background: #7e9290;
+    background: #ff8679;
 }
 
 @-webkit-keyframes animate-loading {

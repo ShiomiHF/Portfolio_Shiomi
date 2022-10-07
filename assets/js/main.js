@@ -120,7 +120,7 @@
     );
 
     /**
-     * Scroll with ofset on page load with hash links in the url
+     * Scroll with offset on page load with hash links in the url
      */
     window.addEventListener("load", () => {
         if (window.location.hash) {
@@ -230,36 +230,31 @@
 const sections = ["hero", "about", "portfolio", "contact"];
 let index = 0;
 var done = true;
-
 const scrollToTheView = (e) => {
     e.preventDefault(); // Prevent default scroll behaviour
-    // e.stopPropagation();
 
-    if (done === true) {
-        // if scrolling action is done
-        done = false; // start the scrolling checking process so set done variable to false
-        if (e.deltaY >= 0 && index !== 3) {
-            // if scrolling down with mouse and not last section
-            index = index + 1;
-        } else if (e.deltaY < 0 && index !== 0) {
-            // if scrolling up with mouse and not first section
-            index = index - 1;
+    if (window.innerWidth > 620) {
+        if (done === true) {
+            // if scrolling action is done
+            done = false; // start the scrolling checking process so set done variable to false
+            if (e.deltaY >= 0 && index !== 3) {
+                // if scrolling down with mouse and not last section
+                index = index + 1;
+            } else if (e.deltaY < 0 && index !== 0) {
+                // if scrolling up with mouse and not first section
+                index = index - 1;
+            }
+
+            setTimeout(() => {
+                // Use timeout to stop listening to scroll event for half a second otherwise scroll too much
+                done = true;
+            }, 500);
         }
-
-        // Scrolling to the next / previous section
-        document.getElementById(sections[index]).scrollIntoView({ behavior: "smooth" });
     }
 
-    // done = true;
-
-    setTimeout(() => {
-        // Use timeout to stop listening to scroll event for half a second otherwise scroll too much
-        done = true;
-    }, 500);
+    // Scrolling to the next / previous section
+    document.getElementById(sections[index]).scrollIntoView({ behavior: "smooth" });
 };
 
 // Listening to scroll event
 window.addEventListener("wheel", scrollToTheView, { passive: false });
-
-
-//bg wave
