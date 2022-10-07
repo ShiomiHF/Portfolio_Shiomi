@@ -233,8 +233,9 @@ var done = true;
 
 const scrollToTheView = (e) => {
     e.preventDefault(); // Prevent default scroll behaviour
+    // e.stopPropagation();
 
-    if (done) {
+    if (done === true) {
         // if scrolling action is done
         done = false; // start the scrolling checking process so set done variable to false
         if (e.deltaY >= 0 && index !== 3) {
@@ -248,6 +249,9 @@ const scrollToTheView = (e) => {
         // Scrolling to the next / previous section
         document.getElementById(sections[index]).scrollIntoView({ behavior: "smooth" });
     }
+
+    // done = true;
+
     setTimeout(() => {
         // Use timeout to stop listening to scroll event for half a second otherwise scroll too much
         done = true;
@@ -256,3 +260,6 @@ const scrollToTheView = (e) => {
 
 // Listening to scroll event
 window.addEventListener("wheel", scrollToTheView, { passive: false });
+
+
+//bg wave
