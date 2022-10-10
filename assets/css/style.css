@@ -287,9 +287,9 @@ h6 {
 
 .wave {
     position: absolute;
-    width: 1500px;
+    width: 1200px;
     height: 100vh;
-    margin-left: -150px;
+    margin-left: -200px;
     margin-top: -250px;
     border-radius: 43%;
 }
@@ -304,13 +304,13 @@ h6 {
 }
 
 .wave.-one {
-    animation: rotate 100000ms infinite linear;
+    animation: rotate 50000ms infinite linear;
     opacity: 10%;
     background: white;
 }
 
 .wave.-two {
-    animation: rotate 15000ms infinite linear;
+    animation: rotate 25000ms infinite linear;
     opacity: 15%;
     background: white;
 }
@@ -563,11 +563,10 @@ section {
     opacity: 0.8;
 }
 
-#portfolio .portfolio-hover-img img {
+#portfolio .portfolio-item .portfolio-link .portfolio-hover-img img {
     opacity: 1;
     width: 3rem;
 }
-
 
 #portfolio .portfolio-item .portfolio-link:hover .portfolio-hover h4 {
     font-size: 1.5rem;
@@ -583,12 +582,6 @@ section {
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-weight: 700;
     margin-bottom: 0;
-}
-#portfolio .portfolio-item .portfolio-caption .portfolio-caption-subheading {
-    font-size: 0.8rem;
-    font-style: italic;
-    font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
-        sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #portfolio .portfolio-items {
     margin-bottom: 0 !important;
@@ -628,12 +621,11 @@ section {
     font-family: "Roboto Slab", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
         sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-.portfolio-modal .modal-content p {
-    margin-bottom: 2rem;
-}
+.portfolio-modal .modal-content p,
 .portfolio-modal .modal-content ul.list-inline {
     margin-bottom: 2rem;
 }
+
 .portfolio-modal .modal-content img {
     width: 32rem;
     margin-bottom: 1rem;
