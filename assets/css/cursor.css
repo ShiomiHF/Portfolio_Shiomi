@@ -152,7 +152,7 @@ svg {
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 700px) {
     .Cursor {
         display: none;
     }
