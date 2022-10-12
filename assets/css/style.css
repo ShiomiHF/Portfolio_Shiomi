@@ -33,6 +33,11 @@ h6 {
     border-color: #ff8679 !important;
 }
 
+@media (max-width: 991px) {
+    .container{
+    padding: 40px 0;
+}
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -156,9 +161,6 @@ h6 {
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-/**
-* Desktop Navigation 
-*/
 .nav-menu {
     padding: 0;
 }
@@ -240,9 +242,6 @@ h6 {
     display: block;
 }
 
-/**
-* Mobile Navigation 
-*/
 .mobile-nav-toggle {
     position: fixed;
     right: 10px;
@@ -282,57 +281,6 @@ h6 {
 #hero {
     background-color: #ffd4ce;
 }
-
-/* bg-wave */
-
-.wave {
-    position: absolute;
-    width: 1200px;
-    height: 100vh;
-    margin-left: -200px;
-    margin-top: -250px;
-    border-radius: 43%;
-}
-
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    from {
-        transform: rotate(360deg);
-    }
-}
-
-.wave.-one {
-    animation: rotate 50000ms infinite linear;
-    opacity: 10%;
-    background: white;
-}
-
-.wave.-two {
-    animation: rotate 25000ms infinite linear;
-    opacity: 15%;
-    background: white;
-}
-
-@media (max-width: 992px) {
-    .wave-box {
-        position: fixed;
-        top: 0;
-        transform: rotate(80deg);
-        left: 0;
-    }
-
-    .wave {
-        position: absolute;
-        width: 1500px;
-        height: 100vh;
-        margin-left: -150px;
-        margin-top: -250px;
-        border-radius: 43%;
-    }
-}
-/* fini bg-wave */
 
 @media (min-width: 992px) {
     #hero {
@@ -408,7 +356,54 @@ h6 {
         line-height: 24px;
     }
 }
+/* bg-wave */
+.wave {
+    position: absolute;
+    width: 1200px;
+    height: 100vh;
+    margin-left: -200px;
+    margin-top: -250px;
+    border-radius: 43%;
+}
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    from {
+        transform: rotate(360deg);
+    }
+}
+
+.wave.-one {
+    animation: rotate 50000ms infinite linear;
+    opacity: 10%;
+    background: white;
+}
+
+.wave.-two {
+    animation: rotate 25000ms infinite linear;
+    opacity: 15%;
+    background: white;
+}
+
+@media (max-width: 992px) {
+    .wave-box {
+        position: fixed;
+        top: 0;
+        transform: rotate(80deg);
+        left: 0;
+    }
+
+    .wave {
+        position: absolute;
+        width: 1500px;
+        height: 100vh;
+        margin-left: -150px;
+        margin-top: -250px;
+        border-radius: 43%;
+    }
+}
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -417,11 +412,9 @@ section {
     overflow: hidden;
 }
 
-.section-title {
-    text-align: center;
-}
 
 .section-title .h2-section {
+    text-align: center;
     font-size: 80px;
     font-weight: bold;
     text-transform: uppercase;
